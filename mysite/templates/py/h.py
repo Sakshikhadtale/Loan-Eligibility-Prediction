@@ -1,0 +1,25 @@
+import cgi
+
+form = cgi.FieldStorage()
+
+my_input_name = form.getvalue('my_input_name')
+loan_id = form.getvalue('Loan_Id')
+dependants = form.getvalue('Dependants')
+gender = form.getvalue('gender')
+self_employed = form.getvalue('Self Employed')
+married = form.getvalue('Married')
+highest_education = form.getvalue('Highest Education')
+applicant_income = form.getvalue('Applicant_Income')
+coapplicant_income = form.getvalue('Coapplicant_Income')
+loan_amount = form.getvalue('Loan_Amount')
+
+print("my_input_name: " + my_input_name)
+print("Loan_Id: " + loan_id)
+print("Dependants: " + dependants)
+print("Gender: " + gender)
+print("Self Employed: " + self_employed)
+print("Married: " + married)
+print("Highest Education: " + highest_education)
+print("Applicant Income: " + applicant_income)
+print("Coapplicant Income: " + coapplicant_income)
+print("Loan Amount: " + loan_amount)
